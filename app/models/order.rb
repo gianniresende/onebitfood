@@ -7,7 +7,6 @@ class Order < ApplicationRecord
   enum status: { waiting: 0, delivered: 1}
 
   before_validation :set_price
-
   accepts_nested_attributes_for :order_products, allow_destroy: true
 
   private
@@ -19,5 +18,4 @@ class Order < ApplicationRecord
     end
     self.total_value = final_price + self.restaurant.delivery_tax
   end
-
 end
