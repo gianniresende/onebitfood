@@ -1,7 +1,9 @@
 json.id restaurant.id
 json.name restaurant.name
+json.slug restaurant.slug
 json.description restaurant.description
 json.delivery_tax restaurant.delivery_tax
+json.category_title restaurant.category.title
 json.city restaurant.city
 json.street restaurant.street
 json.neighborhood restaurant.neighborhood
