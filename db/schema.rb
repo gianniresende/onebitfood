@@ -105,7 +105,7 @@ ActiveRecord::Schema.define(version: 2021_05_19_013403) do
   end
 
   create_table "rates", force: :cascade do |t|
-    t.string "review"
+    t.decimal "review"
     t.bigint "restaurant_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
